@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>App de Música</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div id="tab1" class="tab-content active">
+                <h1>Página Principal</h1>
+                <p>Bienvenido a nuestra app de música!</p>
+            </div>
+    
+            <div id="tab2" class="tab-content">
+                <h1>Lista de Reproducción</h1>
+                <ul id="containerCanciones">
+                    <!-- Canción predefinida -->
+                    <li class="cardCancion">
+                        <img src="./img/img1.jpg" class="imgCancion" alt="Canción 1">
+                        <div class="infoCancion">
+                            <h2 class="tituloCancion">Que adoren tus huesos</h2>
+                            <p class="nombreArtista">Niña polaca</p>
+                        </div>
+                    </li>
+                </ul>
+                <div id="cancionActual">Canción Actual: Ninguna</div>
+            </div>
+    
+            <div id="tab3" class="tab-content">
+                <h1>Canción Actual</h1>
+                <div class="player">
+                    <i class="fas fa-step-backward"></i>
+                    <i class="fas fa-play"></i>
+                    <i class="fas fa-pause"></i>
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <audio src="" controls></audio>
+            </div>
+        </div>
+    
+        <nav class="bottom-nav">
+            <button class="nav-button active" data-tab="tab1"><i class="fas fa-home"></i><span>Inicio</span></button>
+            <button class="nav-button" data-tab="tab2"><i class="fas fa-music"></i><span>Lista</span></button>
+            <button class="nav-button" data-tab="tab3"><i class="fas fa-volume-up"></i><span>Canción</span></button>
+        </nav>
+
+    <script src="./scrypt.js"></script>
+</body>
+</html>
